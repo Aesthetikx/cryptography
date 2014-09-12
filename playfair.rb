@@ -24,8 +24,7 @@ module Cryptography
     end
 
     def encode(message)
-      message = x_pad(message.downcase.gsub(/\s/,''))
-      puts message
+      message = x_pad(message.downcase.gsub(/[^\w]/,''))
       ciphertext = ""
       message.chars.each_slice(2) do |pair|
         x1 = find_char(pair[0])[0]
@@ -63,6 +62,8 @@ module Cryptography
 
     def decode(ciphertext)
       message = ""
+      ciphertext = ciphertext.gsub('ij', 'i')
+      ciphertext << "x" unless ciphertext.length.even?
       ciphertext.downcase.chars.each_slice(2) do |pair|
         x1 = find_char(pair[0])[0]
         y1 = find_char(pair[0])[1]
