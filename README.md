@@ -52,3 +52,11 @@ Other available methods:
 text.trigram_frequency
 text.ngram_frequency(8)
 ```
+
+###Co-prime numbers
+Generate the co-primes (< 26) of 26
+```ruby
+26.coprimes
+# => [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
+```
+
