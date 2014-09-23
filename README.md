@@ -60,3 +60,11 @@ Generate the co-primes (< 26) of 26
 # => [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
 ```
 
+###DES
+Cryptographically insecure Data Encryption Standard implementation
+####Key Schedule
+Generate the 8th round subkey:
+```ruby
+Cryptography::DES::KeySchedule.new("133457799BBCDFF1").keys[7]
+# => "111101111000101000111010110000010011101111111011"
+```
