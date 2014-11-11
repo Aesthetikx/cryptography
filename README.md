@@ -68,3 +68,13 @@ Generate the 8th round subkey:
 Cryptography::DES::KeySchedule.new("133457799BBCDFF1").keys[7]
 # => "111101111000101000111010110000010011101111111011"
 ```
+
+### Toy Tetragraph Hash
+Simple toy hash implementation
+```ruby
+Cryptography::TTH.hash("I leave twenty million dollars to my friendly cousin Bill.")
+# => "BFQG"
+
+Cryptography::TTH.hash("AYHGD")
+# => "BFQG"
+```
