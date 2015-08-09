@@ -1,6 +1,8 @@
 ovaltine
 ============
 
+![Alt text](/img/ralphie.png?raw=true "ralphie")
+
 Simple cryptography utilities in ruby
 
 ```ruby
