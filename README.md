@@ -1,4 +1,4 @@
-cryptography
+ovaltine
 ============
 
 Simple cryptography utilities in ruby
