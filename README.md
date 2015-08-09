@@ -5,9 +5,27 @@ ovaltine
 
 Simple cryptography utilities in ruby
 
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'ovaltine'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install ovaltine
+
 ```ruby
 require 'ovaltine'
 ```
+
+## Usage
 
 ###Playfair Cipher
 
@@ -80,3 +98,11 @@ Ovaltine::TTH.hash("I leave twenty million dollars to my friendly cousin Bill.")
 Ovaltine::TTH.hash("AYHGD")
 # => "BFQG"
 ```
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/Aesthetikx/ovaltine. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
