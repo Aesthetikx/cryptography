@@ -1,13 +1,13 @@
 require_relative './permutation.rb'
 
-module Cryptography
+module Ovaltine
   module DES
     class Encoder
 
-      include Cryptography::DES::Permutation
+      include Ovaltine::DES::Permutation
 
       def initialize(key)
-        @key_schedule = Cryptography::DES::KeySchedule.new(key)
+        @key_schedule = Ovaltine::DES::KeySchedule.new(key)
       end
 
       def encode(message)

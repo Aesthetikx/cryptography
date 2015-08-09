@@ -1,4 +1,4 @@
-module Cryptography
+module Ovaltine
   class Playfair
 
     def initialize(keyword)

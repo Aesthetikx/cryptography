@@ -1,4 +1,4 @@
-module Cryptography
+module Ovaltine
   module Frequency
 
     def ngram_frequency(n)
@@ -27,5 +27,5 @@ module Cryptography
 end
 
 class String
-  include Cryptography::Frequency
+  include Ovaltine::Frequency
 end

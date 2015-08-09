@@ -1,4 +1,4 @@
-module Cryptography
+module Ovaltine
   module DES
     module Permutation
 

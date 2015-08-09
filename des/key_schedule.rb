@@ -1,10 +1,10 @@
 require_relative './permutation.rb'
 
-module Cryptography
+module Ovaltine
   module DES
     class KeySchedule
 
-      include Cryptography::DES::Permutation
+      include Ovaltine::DES::Permutation
 
       # Round left shift count
       R = [1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1]

@@ -1,4 +1,4 @@
-module Cryptography
+module Ovaltine
   class TTH
 
     P = [1, 2, 3, 0,

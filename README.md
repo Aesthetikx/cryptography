@@ -6,13 +6,13 @@ ovaltine
 Simple cryptography utilities in ruby
 
 ```ruby
-require 'cryptography'
+require 'ovaltine'
 ```
 
 ###Playfair Cipher
 
 ```ruby
-pf = Cryptography::Playfair.new("passcode")
+pf = Ovaltine::Playfair.new("passcode")
 
 puts pf
 # [ p  a  s  c  o ]
@@ -67,16 +67,16 @@ Cryptographically insecure Data Encryption Standard implementation
 ####Key Schedule
 Generate the 8th round subkey:
 ```ruby
-Cryptography::DES::KeySchedule.new("133457799BBCDFF1").keys[7]
+Ovaltine::DES::KeySchedule.new("133457799BBCDFF1").keys[7]
 # => "111101111000101000111010110000010011101111111011"
 ```
 
 ### Toy Tetragraph Hash
 Simple toy hash implementation
 ```ruby
-Cryptography::TTH.hash("I leave twenty million dollars to my friendly cousin Bill.")
+Ovaltine::TTH.hash("I leave twenty million dollars to my friendly cousin Bill.")
 # => "BFQG"
 
-Cryptography::TTH.hash("AYHGD")
+Ovaltine::TTH.hash("AYHGD")
 # => "BFQG"
 ```

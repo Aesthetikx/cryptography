@@ -1,6 +1,6 @@
 require_relative './encoder.rb'
 
-module Cryptography
+module Ovaltine
   module DES
     class Decryptor < Encoder
 

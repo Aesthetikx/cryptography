@@ -1,4 +1,4 @@
-module Cryptography
+module Ovaltine
   module Prime
     def coprimes
       (0...self).to_a.select { |n| self.gcd(n) == 1 }
@@ -7,5 +7,5 @@ module Cryptography
 end
 
 class Fixnum
-  include Cryptography::Prime
+  include Ovaltine::Prime
 end
